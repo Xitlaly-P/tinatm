@@ -64,7 +64,7 @@ bot.on("message", async message => {
             list = list + (i) + ". " + todo[userspot][i] + "\n";
         }
 
-        const movsched = new Discord.MessageEmbed()
+        const goodmorning = new Discord.MessageEmbed()
         .setTitle("Good Morning, "+ message.author.username+"!")
         .setColor(0x00AE86)
         .addFields(
@@ -72,7 +72,7 @@ bot.on("message", async message => {
             { name: '**The quote of the day:**', value: '`' + quotes[temp] + '`', inline:false }
 	        );
     
-        return message.channel.send(movsched);
+        return message.channel.send(goodmorning);
 
     }
  
